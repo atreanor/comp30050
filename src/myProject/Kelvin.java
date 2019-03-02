@@ -1,7 +1,8 @@
 package myProject;
 
 /*
- * class returns temperature in Kelvin, Celcius & Fahrenheit
+ * Kelvin class implements HeatScalable interface, stores Kelvin temperature
+ * & converts to Fahrenheit & Celcius
  */
 
 public class Kelvin implements HeatScalable {

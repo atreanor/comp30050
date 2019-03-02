@@ -1,5 +1,9 @@
 package myProject;
 
+/*
+ * Celcius class implements HeatScalable interface, stores Clecius temperature
+ * & converts to Fahrenheit & Kelvin
+ */
 public class Celcius implements HeatScalable {
 	
 	private double temperature = 0;

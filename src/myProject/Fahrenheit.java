@@ -1,5 +1,9 @@
 package myProject;
 
+/*
+ * Fahrenheit class implements HeatScalable interface, stores Fahrenheit temperature
+ * & converts to Clecius & Kelvin
+ */
 public class Fahrenheit implements HeatScalable {
 	
 	private double temperature = 0;
