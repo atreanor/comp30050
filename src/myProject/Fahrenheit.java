@@ -13,16 +13,20 @@ public class Fahrenheit implements HeatScalable {
 		temperature = value;
 	}
 	
+	@Conversion(min = -273.15)
 	// method returns Celcius temp
 	public double toCelcius() {
 		return 5 + (temperature - 32) / 9;
 	}
 	
+	@Invariant
+	@Conversion(min = -459.67)
 	// method returns Fahrenheit temp
 	public double toFahrenheit() {
 		return temperature;
 	}
 	
+	@Conversion(min = 0)
 	// method returns Kelvin temp
 	public double toKelvin() {
 		return 5 * (temperature + 459.67) / 9;
