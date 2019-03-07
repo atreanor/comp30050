@@ -1,22 +1,22 @@
 package myProject;
 
 /*
- * Celcius class implements HeatScalable interface, stores Clecius temperature
+ * Celsius class implements HeatScalable interface, stores Clecius temperature
  * & converts to Fahrenheit & Kelvin
  */
-public class Celcius implements HeatScalable {
+public class Celsius implements HeatScalable {
 	
 	private double temperature = 0;
 	
-	// class constructor
-	public Celcius(double value) {
+	// class constructor with specified double temperature value
+	public Celsius(double value) {
 		temperature = value;
 	}
 	
 	@Invariant 
 	@Conversion(min = -273.15)
-	public double toCelcius() {
-		// method returns celcius temp
+	public double toCelsius() {
+		// method returns celsius temp
 		return temperature;
 	}
 	
@@ -32,7 +32,7 @@ public class Celcius implements HeatScalable {
 	}
 	
 	// method returns string description of Celcius instance
-	public String toStrin() {
+	public String toString() {
 		return HeatScalable.formatter.format(temperature) + "C";
 	}
 	
