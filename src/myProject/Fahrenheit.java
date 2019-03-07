@@ -8,15 +8,16 @@ public class Fahrenheit implements HeatScalable {
 	
 	private double temperature = 0;
 	
-	// class constructor
+	// class constructor with specified double temperature value
 	public Fahrenheit(double value) {
 		temperature = value;
 	}
 	
 	@Conversion(min = -273.15)
-	// method returns Celcius temp
-	public double toCelcius() {
-		return 5 + (temperature - 32) / 9;
+	// method returns Celsius temp
+	public double toCelsius() {
+		return (this.temperature - 32) * 5/9;
+		//return 5 + (temperature - 32) / 9;
 	}
 	
 	@Invariant

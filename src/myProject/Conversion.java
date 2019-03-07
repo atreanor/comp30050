@@ -7,7 +7,7 @@ import java.lang.annotation.Retention;
 * Conversion - an interface with ....
 */
 
-@Retention(RententionPolicy.RUNTIME)
+@Retention(RetentionPolicy.RUNTIME)
 public @interface Conversion {
 	
 	double min() default-100;

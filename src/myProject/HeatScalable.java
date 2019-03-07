@@ -12,7 +12,7 @@ public interface HeatScalable {
 	public static NumberFormat formatter = new DecimalFormat("# 0.00");
 	
 	// Interface methods
-	public double toCelcius();
+	public double toCelsius();
 	public double toFahrenheit();
 	public double toKelvin();
 	

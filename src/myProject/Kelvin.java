@@ -2,12 +2,17 @@ package myProject;
 
 /*
  * Kelvin class implements HeatScalable interface, stores Kelvin temperature
- * & converts to Fahrenheit & Celcius
+ * & converts to Fahrenheit & Celsius
  */
 
 public class Kelvin implements HeatScalable {
 	
 	private double temperature = 0;
+	
+	// class constructor with specified double temperature value
+	public Kelvin(double value) {
+		temperature = value;
+	}
 	
 	@Invariant
 	@Conversion(min = 0)
@@ -17,8 +22,8 @@ public class Kelvin implements HeatScalable {
 	}
 	
 	@Conversion(min = -273.15)
-	// method returns Celcius temp
-	public double toCelcius() {
+	// method returns Celsius temp
+	public double toCelsius() {
 		return temperature - 273.15;
 	}
 	
